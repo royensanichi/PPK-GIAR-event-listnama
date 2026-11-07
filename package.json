@@ -1,0 +1,8 @@
+{
+  "name": "hut-ppk-23-registration",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pendaftaran HUT ke-23 Persekutuan Pria Kristen GIA Rajawali",
+  "scripts": {"start": "node server.js"},
+  "engines": {"node": ">=18"}
+}

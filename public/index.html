@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061c3a"><meta name="description" content="Pendaftaran HUT PPK ke-23 GIA Rajawali">
+  <title>Anggota Terdaftar | HUT PPK ke-23</title>
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-left"></div><div class="ambient ambient-right"></div>
+  <header class="topbar wrap">
+    <a class="brand" href="/" aria-label="Beranda HUT PPK"><img class="brand-logo" src="/logo-gia.png" alt="Logo GIA Rajawali"><span>PPK <b>GIA RAJAWALI</b><small>HUT KE-23 · 2026</small></span></a>
+    <div class="top-actions"><button class="hamburger" id="menuButton" aria-label="Buka menu" aria-expanded="false" aria-controls="siteMenu"><span></span><span></span><span></span></button><nav class="menu-popover" id="siteMenu" hidden><a href="/admin">✎ &nbsp; Edit daftar anggota</a></nav></div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div class="cross-art" aria-hidden="true"><span class="cross-shape"></span><span class="cross-glow"></span></div>
+      <div class="hero-content"><p class="eyebrow">✦ PERSEKUTUAN PRIA KRISTEN · GIA RAJAWALI ✦</p><p class="event-label">IBADAH SYUKUR HUT KE-23</p>
+        <h1>Pria Terdaftar <span>HUT PPK ke-23</span></h1>
+        <p class="hero-subtitle">Pria yang Digerakkan oleh Kasih Karunia</p><p class="verse">— 1 Korintus 15:10 —</p>
+      </div>
+    </section>
+    <section class="details" aria-label="Informasi acara">
+      <article class="detail"><span class="detail-icon">▦</span><div><small>HARI & TANGGAL</small><strong>Sabtu, 21 November 2026</strong></div></article>
+      <article class="detail"><span class="detail-icon">◷</span><div><small>WAKTU</small><strong>18.00 WIB</strong></div></article>
+      <article class="detail"><span class="detail-icon">⌖</span><div><small>LOKASI</small><strong>GIA Rajawali, Lt. 1</strong></div></article>
+      <article class="detail"><span class="detail-icon">♙</span><div><small>PEMBICARA</small><strong>Pdt. Rudy Hariyanto</strong></div></article>
+      <article class="detail"><span class="detail-icon">♧</span><div><small>DRESS CODE</small><strong>Casual</strong></div></article>
+    </section>
+    <section class="registration" aria-labelledby="countTitle"><div class="halo"></div><p class="registration-eyebrow">KOMUNITAS KITA TERUS BERTUMBUH</p><h2 id="countTitle" class="typewriter-count" aria-live="polite"><span id="typewriterText"></span><span class="typewriter-caret" aria-hidden="true"></span></h2><p>Belum terdaftar? Yuk, bergabung dan rayakan hari istimewa ini bersama!</p><button class="button-primary" id="openRegistration">✦ &nbsp; Daftar di Sini <span>↗</span></button><small>Pendaftaran wajib untuk reservasi tempat & konsumsi</small></section>
+    <section class="members-section" aria-labelledby="membersTitle"><div class="section-heading"><div><p class="eyebrow">DAFTAR PESERTA</p><h2 id="membersTitle">Nama Anggota <span>Terdaftar</span></h2><p>Geser ke samping untuk melihat nama anggota lainnya.</p></div><div class="carousel-controls"><button id="prevCard" aria-label="Kartu sebelumnya">‹</button><button id="nextCard" aria-label="Kartu berikutnya">›</button></div></div>
+      <div class="members-carousel" id="membersCarousel" tabindex="0" aria-label="Daftar nama anggota, geser horizontal"><div class="empty-state">Belum ada nama yang terdaftar. Jadilah yang pertama!</div></div>
+      <div class="carousel-bottom"><span id="carouselPosition">0 dari 0 kartu</span><div id="carouselDots" class="dots" aria-label="Posisi kartu"></div><span class="swipe-hint">← SWIPE →</span></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap"><div class="footer-line"></div><p><strong>23 Tahun</strong> dalam Anugerah-Nya.</p><span>Terus Bertumbuh, Berdampak, dan Digerakkan oleh Kasih Karunia.</span><div class="footer-divider"></div><small>© 2026 Persekutuan Pria Kristen GIA Rajawali</small><small class="dev-credit">Dev by <b>AlbertSany</b></small></div></footer>
+  <div class="modal-backdrop" id="registrationModal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="formTitle"><button class="modal-close" id="closeRegistration" aria-label="Tutup form">×</button><span class="modal-badge">✦ HUT KE-23</span><h2 id="formTitle">Form Daftar HUT PPK ke-23</h2><p>Isi nama lengkap Anda untuk melakukan pendaftaran.</p><form id="registerForm"><label for="fullName">NAMA LENGKAP</label><input id="fullName" name="fullName" type="text" placeholder="Masukkan nama lengkap Anda" maxlength="80" minlength="3" autocomplete="name" required><p id="formMessage" class="form-message" role="status"></p><button class="button-primary submit-button" id="submitRegistration" type="submit">Daftar Sekarang <span>→</span></button></form><small>Tekan Enter atau klik tombol untuk mendaftar.</small></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
