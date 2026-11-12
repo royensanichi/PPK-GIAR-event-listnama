@@ -46,3 +46,12 @@
 /* Admin copy confirmation */
 .copy-success-modal .confirm-actions { justify-content: center; }
 .copy-success-modal .button-primary { min-width: 130px; }
+
+
+/* Main / Event navigation */
+.primary-nav{display:flex;align-items:center;gap:7px;padding:5px;background:#071c38b8;border:1px solid rgba(255,211,76,.21);border-radius:13px}
+.primary-nav a{padding:11px 20px;border-radius:9px;font-weight:800;font-size:13px;color:#dbe5f6;transition:background .2s,color .2s,transform .2s}
+.primary-nav a:hover{background:#ffffff13;color:#fff;transform:translateY(-1px)}
+.primary-nav a.active{color:#081b36;background:linear-gradient(120deg,#ffe57b,#eaaa2b);box-shadow:0 3px 12px #0004}
+@media(max-width:620px){.topbar{flex-wrap:wrap;gap:10px}.primary-nav{order:3;flex-basis:100%;justify-content:center}.primary-nav a{flex:1;text-align:center;padding:10px}}
+@media(prefers-reduced-motion:reduce){.primary-nav a{transition:none!important}}
