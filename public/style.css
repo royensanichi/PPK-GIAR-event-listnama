@@ -55,3 +55,10 @@
 .primary-nav a.active{color:#081b36;background:linear-gradient(120deg,#ffe57b,#eaaa2b);box-shadow:0 3px 12px #0004}
 @media(max-width:620px){.topbar{flex-wrap:wrap;gap:10px}.primary-nav{order:3;flex-basis:100%;justify-content:center}.primary-nav a{flex:1;text-align:center;padding:10px}}
 @media(prefers-reduced-motion:reduce){.primary-nav a{transition:none!important}}
+
+/* Footer: event name and theme are populated from event-footer.js */
+.footer-event-label{display:block;color:var(--gold)!important;font-size:11px!important;letter-spacing:.2em;font-weight:800;margin-bottom:12px}
+.footer .footer-event-name{font-family:Outfit,Arial,sans-serif;font-size:clamp(27px,4vw,38px);line-height:1.2;margin:0 0 10px}
+.footer .footer-event-name strong{color:var(--gold)}
+.footer .footer-event-theme{display:block;font-family:Outfit,Arial,sans-serif;font-size:clamp(20px,3vw,27px);font-weight:800;font-style:normal;color:#fff3c7;margin:0 0 7px}
+.footer .footer-event-description{display:block;color:#c9d8ec;font-size:clamp(12px,2vw,15px);font-style:italic;line-height:1.6;margin:0 auto;max-width:650px}
