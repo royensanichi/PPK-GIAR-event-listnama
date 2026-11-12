@@ -56,9 +56,15 @@
 @media(max-width:620px){.topbar{flex-wrap:wrap;gap:10px}.primary-nav{order:3;flex-basis:100%;justify-content:center}.primary-nav a{flex:1;text-align:center;padding:10px}}
 @media(prefers-reduced-motion:reduce){.primary-nav a{transition:none!important}}
 
-/* Footer: event name and theme are populated from event-footer.js */
-.footer-event-label{display:block;color:var(--gold)!important;font-size:11px!important;letter-spacing:.2em;font-weight:800;margin-bottom:12px}
-.footer .footer-event-name{font-family:Outfit,Arial,sans-serif;font-size:clamp(27px,4vw,38px);line-height:1.2;margin:0 0 10px}
+/* Compact, consistent footer across Main, Event, detail, and Admin */
+.footer{padding:8px 0 20px}
+.footer-line{max-width:320px;height:1px;margin:0 auto 14px}
+.footer .footer-event-label{display:block;color:var(--gold);font-size:9px!important;letter-spacing:.12em;font-weight:700;margin:0 0 5px;line-height:1.4}
+.footer .footer-event-name{font-family:Outfit,Arial,sans-serif;font-size:15px!important;font-weight:700;line-height:1.3;margin:0 0 3px}
 .footer .footer-event-name strong{color:var(--gold)}
-.footer .footer-event-theme{display:block;font-family:Outfit,Arial,sans-serif;font-size:clamp(20px,3vw,27px);font-weight:800;font-style:normal;color:#fff3c7;margin:0 0 7px}
-.footer .footer-event-description{display:block;color:#c9d8ec;font-size:clamp(12px,2vw,15px);font-style:italic;line-height:1.6;margin:0 auto;max-width:650px}
+.footer .footer-event-theme{display:block;color:#fff1c5;font-family:Outfit,Arial,sans-serif;font-size:13px!important;font-style:normal;font-weight:600;line-height:1.4;margin:0 0 2px}
+.footer .footer-event-description{display:block;color:#b9cbe2;font-size:11px!important;font-style:normal;line-height:1.4;margin:0 auto;max-width:560px}
+.footer-divider{max-width:180px;margin:12px auto 7px}
+.footer small{font-size:10px;line-height:1.5}
+.footer .dev-credit{margin-top:2px}
+@media(max-width:620px){.footer{padding:8px 14px 18px}.footer .footer-event-name{font-size:14px!important}.footer .footer-event-theme{font-size:12px!important}.footer .footer-event-description{font-size:10px!important}}
